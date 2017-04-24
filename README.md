@@ -1,36 +1,71 @@
-Prediction Assignment
+Course Project: Shiny Application and Reproducible Pitch
 ========================================================
 
-Background
+Instructions
 -------------
 
-Using devices such as Jawbone Up, Nike FuelBand, and Fitbit it is now possible to collect a large amount of data about personal activity relatively inexpensively. These type of devices are part of the quantified self movement – a group of enthusiasts who take measurements about themselves regularly to improve their health, to find patterns in their behavior, or because they are tech geeks. One thing that people regularly do is quantify how much of a particular activity they do, but they rarely quantify how well they do it. In this project, your goal will be to use data from accelerometers on the belt, forearm, arm, and dumbell of 6 participants. They were asked to perform barbell lifts correctly and incorrectly in 5 different ways. More information is available from the website here: http://groupware.les.inf.puc-rio.br/har (see the section on the Weight Lifting Exercise Dataset).
+# Your Shiny Application
+1. Write a shiny application with associated supporting documentation. The documentation should be thought of as whatever a user will need to get started using your application.
+2. Deploy the application on Rstudio's shiny server
+3. Share the application link by pasting it into the text box below
+4. Share your server.R and ui.R code on github
 
-Data
----------
-The training data for this project are available here:
+The application must include the following:
 
-https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv
+1. Some form of input (widget: textbox, radio button, checkbox, ...)
+2. Some operation on the ui input in sever.R
+3. Some reactive output displayed as a result of server calculations
+4. You must also include enough documentation so that a novice user could use your application.
+5. The documentation should be at the Shiny website itself. Do not post to an external link.
 
-The test data are available here:
+The Shiny application in question is entirely up to you. However, if you're having trouble coming up with ideas, you could start from the simple prediction algorithm done in class and build a new algorithm on one of the R datasets packages. Please make the package simple for the end user, so that they don't need a lot of your prerequisite knowledge to evaluate your application. You should emphasize a simple project given the short time frame.  
 
-https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv
 
-The data for this project come from this source: http://groupware.les.inf.puc-rio.br/har. If you use the document you create for this class for any purpose please cite them as they have been very generous in allowing their data to be used for this kind of assignment.
+# Your Reproducible Pitch Presentation
+OK, you've made your shiny app, now it's time to make your pitch. You get 5 slides (inclusive of the title slide) to pitch a your app. You're going to create a web page using Slidify or Rstudio Presenter with an html5 slide deck.
 
-What you should submit
----------------
-The goal of your project is to predict the manner in which they did the exercise. This is the "classe" variable in the training set. You may use any of the other variables to predict with. You should create a report describing how you built your model, how you used cross validation, what you think the expected out of sample error is, and why you made the choices you did. You will also use your prediction model to predict 20 different test cases.
+Here's what you need
 
-Peer Review Portion
+1. 5 slides to pitch our idea done in Slidify or Rstudio Presenter
+2. Your presentation pushed to github or Rpubs
+3. A link to your github or Rpubs presentation pasted into the provided text box
 
-Your submission for the Peer Review portion should consist of a link to a Github repo with your R markdown and compiled HTML file describing your analysis. Please constrain the text of the writeup to < 2000 words and the number of figures to be less than 5. It will make it easier for the graders if you submit a repo with a gh-pages branch so the HTML page can be viewed online (and you always want to make it easy on graders :-).
+Your presentation must satisfy the following
 
-Course Project Prediction Quiz Portion
+1. It must be done in Slidify or Rstudio Presenter
+2. It must be 5 pages
+3. It must be hosted on github or Rpubs
+4. It must contained some embedded R code that gets run when slidifying the document
 
-Apply your machine learning algorithm to the 20 test cases available in the test data above and submit your predictions in appropriate format to the Course Project Prediction Quiz for automated grading.
+NOTE: Slidify is no longer compatible with with Rpubs. If you choose to use Slidify you must share your presentation using GitHub Pages.
 
-Reproducibility
----------------
+Notice to publish your slidify presentation to github or Rpubs, there's the publish command. This link outlines how to do it (it's one line).
 
-Due to security concerns with the exchange of R code, your code will not be run during the evaluation by your classmates. Please be sure that if they download the repo, they will be able to view the compiled HTML version of your analysis.
+http://slidify.org/publish.html
+
+Rstudio presenter has a button to publish directly to Rpubs https://support.rstudio.com/hc/en-us/articles/200714023-Displaying-and-Distributing-Presentations. If you are using Rpubs, put in the link to the presentation into the submission box as a http:// link not a https:// link.
+
+You can also publish using both formats to github manually using gh-pages, though your github branch must have a .nojekyll fle and be on a branch names gh-pages. There's more on gh-pages here https://pages.github.com/ and there is a video lecture outlining how to do this.
+
+# Review criterialess 
+
+# Your Shiny Application
+
+- Was there enough documentation on the shiny site for a user to get started using the application?
+- Did the application run as described in the documentation?
+- Was there some form of widget input (slider, textbox, radio buttons, checkbox, ...) in either ui.R or a custom web page?
+- Did server.R perform some calculations on the input in server.R?
+- Was the server calculation displayed in the html page?
+- Was the app substantively different than the very simple applications built in the class? Note, it's OK if the app is simple and based on the one presented in class. I just don't want it to be basically a carbon copy of the examples we covered. For example, if someone simply changed the variable names, then this would not count. However, a prediction algorithm that had a similar layout would be fine.
+- Here's your opportunity to give the app +1 for being well done, or neat, or even just a solid effort.
+
+# Your Reproducible Pitch
+
+- Was the presentation completed in slidify or R Presenter?
+- Was it 5 pages?
+- Did it contain an R expression that got evaluated and displayed?
+- Did it contain an R expression that got evaluated and displayed?
+- Was it hosted on github or Rpubs?
+- Was the server calculation displayed in the html page?
+- Here's your opportunity to give this presentation a +1 for being well done. Did they tinker around with the default style? Was the presentation particularly lucid and well organized? In other words, the student made a legitimate try.
+- There were no R errors displayed in the presentation.
